@@ -1,12 +1,5 @@
 version: '2.1'
 services:
-    postgres:
-        image: postgres:9.6
-        environment:
-            - POSTGRES_USER=airflow
-            - POSTGRES_PASSWORD=airflow
-            - POSTGRES_DB=airflow
-
     webserver:
         image: puckel/docker-airflow:1.9.0-4
         restart: always
